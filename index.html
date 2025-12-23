@@ -122,7 +122,7 @@ function switchLanguage(lang) {
     // Must be transmitted
     // PS: http://localhost:5173/login?brand=vw&region=america
     const params = new URLSearchParams({ brand, region, lang: currentLang });
-    window.location.href = `http://localhost:5173/login?${params.toString()}`;
+    window.location.href = `https://ppg-admin.vercel.app/login?${params.toString()}`;
   }
 
   document.addEventListener('DOMContentLoaded', () => {
