@@ -119,6 +119,12 @@ function switchLanguage(lang) {
     document.querySelectorAll('.card').forEach(card => card.classList.remove('selected'));
     event.currentTarget.classList.add('selected');
 
+    if(region==='america'){
+      currentLang='en'
+    }else{
+      currentLang='fr'
+    }
+
     // Must be transmitted
     // PS: http://localhost:5173/login?brand=vw&region=america
     const params = new URLSearchParams({ brand, region, lang: currentLang });
